@@ -1,0 +1,47 @@
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+  }
+  
+  .hora,
+  .minuto,
+  .segundo{
+    position: absolute;
+    background: black;
+    transform-origin: center bottom;
+    left: 95px;
+  }
+  
+  .hora {
+    width: 6px;
+    height: 50px;
+    top: 50px;
+  }
+  
+  .minuto {
+    width: 4px;
+    height: 70px;
+    top: 40px;
+  }
+  
+  .segundo {
+    width: 2px;
+    height: 80px;
+    top: 30px;
+    background: rgb(0, 0, 0);
+  }
+  
+  .circulo {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    top: 95px;
+    left: 95px;
+  }
+  
