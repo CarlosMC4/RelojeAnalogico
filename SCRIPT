@@ -1,0 +1,31 @@
+function RelojA() {
+    const now = new Date();
+    const hora = now.getHours();
+    const minuto = now.getMinutes();
+    const segundo = now.getSeconds();
+  
+    const horas = document.getElementById("hora");
+    const minutos= document.getElementById("minuto");
+    const segundos= document.getElementById("segundo");
+  
+    const hourDegrees = (hora * 30) + (0.5 * minuto);
+    const minuteDegrees = (minuto * 6) + (0.1 * segundo);
+    const secondDegrees = segundo* 6;
+  
+    horas.style.transform = `rotate(${hourDegrees}deg)`;
+    minutos.style.transform = `rotate(${minuteDegrees}deg)`;
+    segundos.style.transform = `rotate(${secondDegrees}deg)`;
+  }
+  
+  setInterval(RelojA, 1000);
+
+  function RelojD() {
+    const now = new Date();
+    const horas = String(now.getHours()).padStart(2, '0');
+    const minutos = String(now.getMinutes()).padStart(2, '0');
+    const segundos = String(now.getSeconds()).padStart(2, '0');
+    const timeString = `${horas}:${minutos}:${segundos}`;
+    document.getElementById('digitalClock').textContent = timeString;
+}
+
+setInterval(RelojD, 1000);
