@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj analogico y digital</title>
+  <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+  <div class="clock">
+    <div class="hora" id="hora"></div>
+    <div class="minuto" id="minuto"></div>
+    <div class="segundo" id="segundo"></div>
+    <div class="circulo"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+    <link rel="stylesheet" href="diseñoD.css">
+</head>
+<body>
+    <div id="digitalClock"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
